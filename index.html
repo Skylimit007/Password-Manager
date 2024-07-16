@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Manager</h1>
+
+    <section id="init-master-password">
+      <h2>Set/Verify Master Password</h2>
+      <form id="init-master-password-form">
+        <label for="master-password">Master Password:</label>
+        <input type="password" id="master-password" required>
+        <button type="submit">Set/Verify</button>
+      </form>
+    </section>
+
+    <section id="add-password">
+      <h2>Add Password</h2>
+      <form id="add-password-form">
+        <label for="domain">Domain:</label>
+        <input type="text" id="domain" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section id="get-password">
+      <h2>Get Password</h2>
+      <form id="get-password-form">
+        <label for="get-domain">Domain:</label>
+        <input type="text" id="get-domain" required>
+        <button type="submit">Get</button>
+      </form>
+      <p id="get-password-result"></p>
+    </section>
+
+    <section id="list-passwords">
+      <h2>List Passwords</h2>
+      <button id="list-passwords-button">List All Passwords</button>
+      <ul id="passwords-list"></ul>
+    </section>
+
+    <section id="delete-password">
+      <h2>Delete Password</h2>
+      <form id="delete-password-form">
+        <label for="delete-domain">Domain:</label>
+        <input type="text" id="delete-domain" required>
+        <button type="submit">Delete</button>
+      </form>
+    </section>
+  </div>
+  <script src="password-manager.js"></script>
+</body>
+</html>
